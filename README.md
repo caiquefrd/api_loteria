@@ -5,7 +5,7 @@ __Descrição da atividade:__ fazer um aplicativo web para mostrar os dados do �
 ### Situação atual do código
 
 A aplicação atual faz a requsição na API de loterias da Caixa, disponível em 
-https://servicebus2.caixa.gov.br/portaldeloterias/api/home/ultimos-resultados e exibe o último sorteio da Mega-sena, Lotofácil e Quina.
+https://servicebus2.caixa.gov.br/portaldeloterias/api/home/ultimos-resultados e exibe o último sorteio da Mega-sena e Lotofácil.
 
 ### Organização do código
 - `assets`: imagens dos trevos das loterias;
@@ -17,4 +17,3 @@ https://servicebus2.caixa.gov.br/portaldeloterias/api/home/ultimos-resultados e 
 - `types`: definição dos tipos de dados. A interface `Props` define as propriedades que possuem um sorteio de loteria. A interface `LoteriaProps` define os objetos a serem propagados pelo contexto. 
 
 
-"# api_loteria" 

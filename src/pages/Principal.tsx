@@ -1,25 +1,35 @@
-import Lotofacil from "../components/Lotofacil";
-import Megasena from "../components/Megasena";
-import Quina from "../components/Quina";
-import { useLoteria } from "../hooks";
-import "./index.css";
+import Rotas from "../routes";
+import PrincipalApp from "../components/PrincipalApp";
 
 export default function Principal() {
-  const { megasena } = useLoteria();
-
   return (
-    <>
-      {megasena.dataApuracao ? (
-        <div className="principal-bloco">
-          <Megasena />
-          <Lotofacil />
-          <Quina/>
-        </div>
-      ) : (
-        <div className="principal-carregando">
-          <h3>Carregando...</h3>
-        </div>
-      )}
-    </>
-  );
+    <PrincipalApp>
+      <Rotas/>
+    </PrincipalApp>
+  )
 }
+
+// import { useLoteria } from "../hooks";
+// import Rotas from "../routes";
+// import "./index.css";
+
+// export default function Principal() {
+//   const { megasena } = useLoteria();
+
+//   return (
+//     <>
+//       {megasena.dataApuracao ? (
+//         <div className="principal-bloco">
+//           <Rotas/>
+//         </div>
+//       ) : (
+//         <div className="principal-carregando">
+//           <h3>Carregando...</h3>
+//         </div>
+//       )}
+//     </>
+//   );
+// }
+
+
+

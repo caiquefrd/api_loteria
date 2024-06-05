@@ -8,6 +8,7 @@ export function Provider({ children }: any) {
   const [megasena, setMegasena] = useState({} as Props);
   const [lotofacil, setLotofacil] = useState({} as Props);
   const [quina, setQuina] = useState({} as Props);
+  const [timemania, setTimemania] = useState({} as Props);
 
   useEffect(() => {
     (async function () {
@@ -15,13 +16,14 @@ export function Provider({ children }: any) {
       setMegasena(r.megasena);
       setLotofacil(r.lotofacil);
       setQuina(r.quina);
+      setTimemania(r.timemania);
       console.log('Dados');
       console.log( r )
     })();
   }, []);
 
   return (
-    <Contexto.Provider value={{ megasena, lotofacil, quina}}>
+    <Contexto.Provider value={{ megasena, lotofacil, quina, timemania }}>
         {children}
     </Contexto.Provider>
   );
