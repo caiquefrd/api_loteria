@@ -2,7 +2,7 @@ import NomeLoteria from "../../components/NomeLoteria"
 import Estimativa from "../../components/Estimativa";
 import { megasena, quina, timemania } from "../../styles/theme"
 import { ThemeProvider } from 'styled-components';
-import Principal from "../../components/Principal";
+import Principal from "../../components/PrincipalPage";
 import Esquerda from "../../components/Esquerda";
 import Direita from "../../components/Direita";
 import Resultado from "../../components/Resultado";
