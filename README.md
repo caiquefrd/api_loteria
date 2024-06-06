@@ -1,19 +1,25 @@
-# Atividade - React TS
+# <h1 align="center"> Painel de sorteios CAIXA :bank: </h1>
 
-__Descrição da atividade:__ fazer um aplicativo web para mostrar os dados do último sorteio da Mega-sena, Lotofácil e Quina.
+## A aplicação é capaz de buscar os dados dos ultimos sorteios pela api da caixa econômica federal, e exibi-los em uma interface simples baseada em react.
 
-### Situação atual do código
+#### Como executar:
+```bash
+# Execute o prompt de comando do seu sistema operacional
+Na área de trabalho, crie uma pasta para armazenar o projeto
+Clique no endereço da pasta localizado no canto superior central
+Digite CMD e pressione Enter
 
-A aplicação atual faz a requsição na API de loterias da Caixa, disponível em 
-https://servicebus2.caixa.gov.br/portaldeloterias/api/home/ultimos-resultados e exibe o último sorteio da Mega-sena e Lotofácil.
+# Baixe este repositório ou clone pelo Git usando o comando:
+git clone https://github.com/caiquefrd/api_loteria.git
 
-### Organização do código
-- `assets`: imagens dos trevos das loterias;
-- `components`: componentes para exibir os resultados dos sorteios de cada loteria;
-- `contexts`: contexto para propagar os resultados da mega-sena e lotofácil pela árvore de componentes. O contexto mantém no estado as propriedades `megasena` e `lotofacil`, esses objetos são propagados na árvore de componentes pelo contexto. As propriedades `megasena` e `lotofacil` são preenchidas após a requisição na API de loterias ser processada;
-- `hooks`: função para acessar o contexto;
-- `pages`: componente que faz a chamada dos componentes `Megasena` e `Lotofacil` e também exibe o texto *Carregando...*;
-- `services`: processa a requisição na API de loterias. Esse código será invocado pelo contexto (pacote `contexts`);
-- `types`: definição dos tipos de dados. A interface `Props` define as propriedades que possuem um sorteio de loteria. A interface `LoteriaProps` define os objetos a serem propagados pelo contexto. 
+# Acesse a pasta do projeto
+cd api_loteria
 
+# Instale as dependências do projeto
+npm i
 
+# Inicie o Projeto
+npm start
+```
+
+:wrench: Tecnologias e ferramentas utilizadas no projeto: `React, Styled-Components, react-router-dom, Typescript, Javascript, npm, Axios`
